@@ -35,6 +35,8 @@ Without input arguments, the function runs a demo example. The output is a figur
 
 A testing script `Example_COP_kmeans.m` is included. It demonstrates cop-kmeans on the three toy data sets above.
 
+`Example_COP_kmeans.py` is the same example in Python. It uses function `cop_kmeans.py`.
+
 ## References
 
 [[1]. Wagstaff, K., Cardie, C., Rogers, S., & Schrödl, S., Constrained k-means clustering with background knowledge. In ICML, Vol. 1, 2001, pp. 577-584.](https://web.cse.msu.edu/~cse802/notes/ConstrainedKmeans.pdf)
