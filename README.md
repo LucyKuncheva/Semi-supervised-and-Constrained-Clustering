@@ -45,9 +45,9 @@ An example is shown below. Must-link constraints are shown with solid lines and 
 <img height="250" src="ExampleOfHierarchicalConstrained.png" />
 
 
-A testing script `Example_constrained_clustering.m` is also included. It demonstrates cop-kmeans and the hierarchical (single linkage) constrained clustering on the three toy data sets above. The output is shown below. The time in seconds taken to run the examples is given in the titles of the plots.
+A testing script `Example_constrained_clustering.m` is also included. It demonstrates cop-kmeans and the hierarchical (single linkage) constrained clustering on the three toy data sets above. The two donuts have 10 constraints of each type. The 3D data have four constraints of each type. The output is shown below. The time in seconds taken to run the examples is given in the titles of the plots.
 
-<img height="250" src="ToyDataResults.png" />
+<img height="450" src="ToyDataResults.png" />
 
 
 
