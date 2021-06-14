@@ -29,9 +29,21 @@ function [labels, centres] = cop_kmeans(data, number_of_clusters, c_join, c_repe
 % verbose is a flag to allow plot of 2D data (if set to 1)
 ```
 
-Without input arguments, the function runs a demo example. The output is a figure showing the clustering of 40 points in 2D into 4 clusters, with 8 must-link constraints and 8 cannot-link constraints. An example is shown below. Must-link constraints are shown with solid lines and cannot-link, with dashed lines.
+Without input arguments, the function runs a demo example. The output is a figure showing the clustering of 80 points in 2D into 4 clusters, with 8 must-link constraints and 8 cannot-link constraints. An example is shown below. Must-link constraints are shown with solid lines and cannot-link, with dashed lines.
 
 <img height="250" src="ExampleOfCOP_kmeans.png" />
+
+- `constrained_hierarchical.m` is MATLAB implementation of the hierarchical (single linkage) constrained algorithm following [[2]](https://link.springer.com/content/pdf/10.1007/11564126_11.pdf)
+
+```
+function labels = constrained_hierarchical(data, number_of_clusters, c_join, c_repel, ~, verbose)
+```
+The inputs and the outputs are the same as in `cop_kmeans`. Without input arguments, the function runs a demo example. The output is a figure showing the clustering of 80 points in 2D into 4 clusters, with 8 must-link constraints and 8 cannot-link constraints.
+
+An example is shown below. Must-link constraints are shown with solid lines and cannot-link, with dashed lines.
+
+<img height="250" src="ExampleOfHierarchicalConstrained.png" />
+
 
 A testing script `Example_COP_kmeans.m` is included. It demonstrates cop-kmeans on the three toy data sets above.
 
@@ -40,6 +52,8 @@ A testing script `Example_COP_kmeans.m` is included. It demonstrates cop-kmeans 
 ## References
 
 [[1]. Wagstaff, K., Cardie, C., Rogers, S., & Schrödl, S., Constrained k-means clustering with background knowledge. In ICML, Vol. 1, 2001, pp. 577-584.](https://web.cse.msu.edu/~cse802/notes/ConstrainedKmeans.pdf)
+
+[[2]. Davidson I. & Ravi, S.S, Agglomerative hierarchical clustering with constraints: Theoretical and empirical results, Proceedings of the 9th European Conference on Principles and Practice of Knowledge Discovery in Databases (PKDD), Porto, Portugal, October 3-7, 2005, LNAI 3721, Springer, 59-70.](https://link.springer.com/content/pdf/10.1007/11564126_11.pdf)
 
 ```
 @misc{KunchevaSemiSupervisedConstrainedClustering2021,
@@ -51,5 +65,3 @@ journal = {GitHub repository},
 howpublished = {\url{https:\\github.com\LucyKuncheva\Semi-supervised-and-Constrained-Clustering }}
 }
 ```
-
-
