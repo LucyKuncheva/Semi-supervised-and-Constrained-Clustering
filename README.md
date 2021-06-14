@@ -45,9 +45,11 @@ An example is shown below. Must-link constraints are shown with solid lines and 
 <img height="250" src="ExampleOfHierarchicalConstrained.png" />
 
 
-A testing script `Example_COP_kmeans.m` is included. It demonstrates cop-kmeans on the three toy data sets above.
+A testing script `Example_constrained_clustering.m` is also included. It demonstrates cop-kmeans and the hierarchical (single linkage) constrained clustering on the three toy data sets above. The output is shown below. The time in seconds taken to run the examples is given in the titles of the plots.
 
-`Example_COP_kmeans.py` is the same example in Python. It uses function `cop_kmeans.py`.
+<img height="250" src="ToyDataResults.png" />
+
+
 
 ## References
 
