@@ -1,6 +1,19 @@
 # Semi-supervised-and-Constrained-Clustering
 
-MATLAB and Python code for semi-supervised learning and constrained clustering. It contains toy examples.
+File `ConstrainedClusteringReferences.pdf` contains a reference list which is summarised in a publication we are currently preparing:
+
+```
+@misc{Kuncheva22,
+author = {Ludmila I Kuncheva, Francis J Williams and Samuel L Hennessey},
+title = {A Bibliographic View on Constrained Clustering},
+year = {2022},
+}
+```
+
+
+
+
+MATLAB and Python code for semi-supervised learning and constrained clustering. 
 
 (Under construction.)
 
