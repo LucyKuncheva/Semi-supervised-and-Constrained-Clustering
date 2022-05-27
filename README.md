@@ -4,7 +4,7 @@ File `ConstrainedClusteringReferences.pdf` contains a reference list which is su
 
 ```
 @misc{Kuncheva22,
-author = {Ludmila I Kuncheva, Francis J Williams and Samuel L Hennessey},
+author = {Ludmila I Kuncheva and Francis J Williams and Samuel L Hennessey},
 title = {A Bibliographic View on Constrained Clustering},
 year = {2022},
 }
