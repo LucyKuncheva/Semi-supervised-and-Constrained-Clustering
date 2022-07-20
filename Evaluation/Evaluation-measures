@@ -1,0 +1,5 @@
+The evaluation measures provided here are: Jaccard Index, Adjusted Rand Index, Normalised 
+Mutual Information and Classification Accuracy. All of these assume an external label set.
+The code is written in MATLAB as there is a notable lack of external measures for
+cluster validation.  There are function for internal validation, e.g., `evalclusters` 
+https://uk.mathworks.com/help/stats/evalclusters.html 
