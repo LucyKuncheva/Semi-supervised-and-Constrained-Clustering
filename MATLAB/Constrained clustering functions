@@ -1,0 +1,20 @@
+This folder contains the implementation of some constrained clustering algorithms in MATLAB:
+
+* cop k-means 
+% [Wagstaff, K., Cardie, C., Rogers, S., & Schrödl, S., Constrained 
+% k-means clustering with background knowledge. In ICML, Vol. 1, 2001, 
+% pp. 577-584.]
+% https://web.cse.msu.edu/~cse802/notes/ConstrainedKmeans.pdf
+
+* constrained hierarchical clustering
+% [Davidson I. & Ravi, S.S, Agglomerative Hierarchical Clustering with
+% Constraints: Theoretical and Empirical Results, Proceedings of the
+% 9th European Conference on Principles and Practice of Knowledge
+% Discovery in Databases (PKDD), Porto, Portugal, October 3-7, 2005,
+% LNAI 3721, Springer, 59-70.]
+% https://link.springer.com/content/pdf/10.1007/11564126_11.pdf
+
+* constrained k-means
+% [Basu S., Banerjee A. & Mooney, R., Semi-supervised clustering by 
+% seeding, Proc. of the 19th ICML, 2002, 10.5555/645531.656012]
+
