@@ -28,22 +28,26 @@ function [nmi,vi] = normalised_mutual_information(A,B)
 
 N = numel(A);
 
+% Relabel into 1, 2, ...
 uA = unique(A); % unique candidate labels
 nA = numel(uA);
+
+[~,A] = max((repmat(A,1,nA) == repmat(uA',numel(A),1)),[],2);
 
 uB = unique(B); % unique true labels
 nB = numel(uB);
 
+[~,B] = max((repmat(B,1,nB) == repmat(uB',numel(B),1)),[],2);
+
 tA = tabulate(A); tB = tabulate(B);
 pA = tA(:,2)/N; pB = tB(:,2)/N; % distributions
-indexA = pA > 0; indexB = pB > 0; 
-HA = -sum(pA(indexA).*log(pA(indexA))); % entropies
-HB = -sum(pB(indexB).*log(pB(indexB))); 
+HA = -sum(pA.*log(pA)); % entropies
+HB = -sum(pB.*log(pB)); 
 
 s = 0;
 for i = 1:nA
     for j = 1:nB
-        t = mean(A == uA(i) & B == uB(j)); % N_ij
+        t = mean(A == i & B == j); % N_ij
         if t > 0 && pA(i) > 0 && pB(j) > 0
             s = s + t * log(t/(pA(i)*pB(j)));
         end
